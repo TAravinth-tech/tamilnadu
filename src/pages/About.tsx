@@ -2,6 +2,8 @@ import { ArrowRight, BadgeCheck, Globe2, Heart, MapPin, PackageCheck, ShieldChec
 import { images } from '@/data/site';
 import { SiteLayout } from '@/components/site/SiteLayout';
 import { CartProvider } from '@/lib/cart-context';
+import kitchen from "/src/images/kitchen.png";
+import kitchen2 from "/src/images/kitchen2.png";
 
 function About() {
   const values = [
@@ -35,7 +37,7 @@ function About() {
             <a href="/shop/#/products" className="primary-button">Explore our collection <ArrowRight size={17} /></a>
           </div>
           <div className="about-intro-image">
-            <img src={images.kitchen} alt="A Tamil Nadu kitchen with fresh ingredients" />
+            <img src={kitchen} alt="A Tamil Nadu kitchen with fresh ingredients" />
             <div className="hero-card"><span>Since</span><strong>2019</strong><small>Small beginnings, big flavour</small></div>
           </div>
         </section>
@@ -60,7 +62,7 @@ function About() {
             <p>Questions about a product, a bulk order, or just want to say hello? We&rsquo;re one message away.</p>
             <a href="/contact/" className="secondary-button">Get in touch <ArrowRight size={17} /></a>
           </div>
-          <div className="promo-image"><img src={images.ingredients} alt="Fresh spices and ingredients" /><span>Good things,<br /><b>well chosen</b></span></div>
+          <div className="promo-image"><img src={kitchen2} alt="Fresh spices and ingredients" /></div>
         </section>
       </main>
       </SiteLayout>

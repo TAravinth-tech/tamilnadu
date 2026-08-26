@@ -1,5 +1,5 @@
 import { Globe2 } from 'lucide-react';
-
+import logo from "/src/images/logo.jpeg";
 export function Logo() {
   return (
     <a
@@ -21,7 +21,7 @@ export function Logo() {
         }}
       >
         <img
-          src="/src/images/logo.jpeg"
+          src={logo}
           alt="Tamil Nadu Global"
           style={{
             width: "100%",

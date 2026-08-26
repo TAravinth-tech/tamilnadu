@@ -8,16 +8,18 @@ import { Toast } from '@/components/site/Toast';
 import { SiteLayout } from '@/components/site/SiteLayout';
 import { CartProvider } from '@/lib/cart-context';
 import "../styles.css";
+import banner from "/src/images/tng-hero-banner.png";
+import gro from "/src/images/gro.png";
+import land from "/src/images/land.png";
+import house from "/src/images/house.png";
+import person from "/src/images/person.png";
+import kitchen from "/src/images/kitchen.png";
 
 
 function Home() {
   const { add } = useCart();
   const [toast, setToast] = useState('');
-  const categories = [
-    { name: 'Everyday spices', sub: 'Bold & aromatic', image: images.spices, query: 'Spices' },
-    { name: 'Ready mixes', sub: 'Made easy', image: images.rustic, query: 'Ready Mixes' },
-    { name: 'Gift boxes', sub: 'Made to share', image: images.kitchen, query: 'Gift Boxes' },
-  ];
+  
   return (
     <CartProvider>
       <SiteLayout current="home">
@@ -34,7 +36,7 @@ function Home() {
 
        <section className="hero">
   <img
-    src="/src/images/tng-hero-banner.png"
+    src={banner}
     alt="Tamil Nadu Global — premium products, rooted in tradition"
     className="hero-banner-img"
   />
@@ -92,7 +94,7 @@ function Home() {
     <div className="category-card">
       <div className="category-image-wrap">
         <img
-          src="/src/images/gro.png"
+          src={gro}
           alt="Groceries"
           className="category-image"
         />
@@ -111,7 +113,7 @@ function Home() {
     <div className="category-card">
       <div className="category-image-wrap">
         <img
-          src="/src/images/land.png"
+          src={land}
           alt="Laundry Care"
           className="category-image"
         />
@@ -130,7 +132,7 @@ function Home() {
     <div className="category-card">
       <div className="category-image-wrap">
         <img
-          src="/src/images/house.png"
+          src={house}
           alt="Household Care"
           className="category-image"
         />
@@ -150,7 +152,7 @@ function Home() {
     <div className="category-card">
       <div className="category-image-wrap">
         <img
-          src="/src/images/person.png"
+          src={person}
           alt="Personal Care"
           className="category-image"
         />
@@ -194,7 +196,7 @@ function Home() {
             <p>Build a better pantry with handpicked ingredients and honest, regional flavours.</p>
             <a href={`/shop/#/products?category=${encodeURIComponent('Gift Boxes')}`} className="secondary-button">Discover gift boxes <ArrowRight size={17} /></a>
           </div>
-          <div className="promo-image"><img src={images.kitchen} alt="Indian kitchen essentials" /><span>Made in<br /><b>India</b></span></div>
+          <div className="promo-image"><img src={kitchen} alt="Indian kitchen essentials" /></div>
         </section>
        
         <section className="how container">
