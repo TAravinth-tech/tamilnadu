@@ -12,7 +12,7 @@ function Confirmation() {
         <span><ChevronRight size={16} /></span>
         <span><Send size={17} /> Send on WhatsApp</span>
       </div>
-      <a href="https://wa.me/919360964448" target="_blank" rel="noreferrer" className="primary-button">Open WhatsApp <ArrowRight size={17} /></a>
+      
       <a href="/shop/#/products" className="text-link">Continue browsing <ArrowRight size={16} /></a>
     </main>
   );

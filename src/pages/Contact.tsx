@@ -20,13 +20,64 @@ function Contact() {
             <div><span className="contact-icon"><Mail /></span><p><small>Email us</small><a href="mailto:hello@tamilnaduglobal.in">hello@tamilnaduglobal.in</a></p></div>
             <div><span className="contact-icon"><Clock3 /></span><p><small>Support hours</small><b>Mon – Sat, 9am – 6pm</b></p></div>
           </div>
-          <form className="contact-form" onSubmit={e => { e.preventDefault(); alert('Thank you. We will be in touch shortly.'); }}>
-            <h2>Send us a note</h2>
-            <label>Your name<input required placeholder="How should we call you?" /></label>
-            <label>Email address<input required type="email" placeholder="you@example.com" /></label>
-            <label>How can we help?<textarea required rows={4} placeholder="Tell us a little more..." /></label>
-            <button className="primary-button" type="submit">Send message <ArrowRight size={17} /></button>
-          </form>
+          <form
+  className="contact-form"
+  onSubmit={e => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const name = (form.elements.namedItem('name') as HTMLInputElement).value;
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
+    const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value;
+
+    const whatsappMessage = `Hello Tamil Nadu Global,
+
+Name: ${name}
+Email: ${email}
+
+How can we help:
+${message}`;
+
+    const whatsappUrl = `https://wa.me/919360964448?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappUrl, '_blank');
+  }}
+>
+  <h2>Send us a note</h2>
+
+  <label>
+    Your name
+    <input
+      name="name"
+      required
+      placeholder="How should we call you?"
+    />
+  </label>
+
+  <label>
+    Email address
+    <input
+      name="email"
+      required
+      type="email"
+      placeholder="you@example.com"
+    />
+  </label>
+
+  <label>
+    How can we help?
+    <textarea
+      name="message"
+      required
+      rows={4}
+      placeholder="Tell us a little more..."
+    />
+  </label>
+
+  <button className="primary-button" type="submit">
+    Send message <ArrowRight size={17} />
+  </button>
+</form>
         </section>
       </main>
       </SiteLayout>
