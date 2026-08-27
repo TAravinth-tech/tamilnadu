@@ -6,10 +6,12 @@ import ProductDetails from './ProductDetails';
 import CartPage from './CartPage';
 import Checkout from './Checkout';
 import Confirmation from './Confirmation';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 function ShopApp() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <CartProvider>
         <Routes>
           <Route path="/products" element={<SiteLayout current="shop"><ProductsPage /></SiteLayout>} />

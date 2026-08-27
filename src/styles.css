@@ -280,7 +280,7 @@ em {
 .header {
   background: white;
   border-bottom: 1px solid var(--line);
-  position: sticky;
+  position: static;
   top: 0;
   z-index: 50;
 }
@@ -347,6 +347,16 @@ em {
   overflow: hidden;
   box-shadow: 0 6px 16px -6px rgba(13, 76, 140, 0.6);
 }
+
+
+@media (max-width: 899px) {
+  .brand-mark {
+    width: 130px !important;
+    height: 130px !important;
+    border-radius: 10px !important;
+  }
+}
+
 .brand-flare {
   position: absolute;
   inset: 0;
@@ -1549,47 +1559,24 @@ main {
   align-items: start;
 }
 .gallery {
-  position: sticky;
-  top: 130px;
-  display: grid;
-  grid-template-columns: 76px 1fr;
-  gap: 18px;
-}
-.thumbs {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.thumbs button {
-  border: 2px solid var(--line);
-  border-radius: 14px;
-  overflow: hidden;
-  background: none;
-  cursor: pointer;
-  padding: 0;
-  transition: border-color 0.2s;
-  aspect-ratio: 1;
-}
-.thumbs button.active {
-  border-color: var(--primary);
-}
-.thumbs img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
+
 .main-image {
   position: relative;
-  aspect-ratio: 1;
-  border-radius: 26px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
   overflow: hidden;
-  background: var(--paper);
+  background: #f3f4f6;
   box-shadow: 0 24px 50px -28px rgba(10, 37, 64, 0.4);
 }
+
 .main-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 .detail-copy .eyebrow {
   color: var(--cyan);
@@ -1741,22 +1728,12 @@ main {
     position: static;
     grid-template-columns: 1fr;
   }
-  .thumbs {
-    flex-direction: row;
-  }
+  
   .main-image {
     order: -1;
   }
 }
-@media (max-width: 520px) {
-  .thumbs {
-    overflow-x: auto;
-  }
-  .thumbs button {
-    width: 64px;
-    flex-shrink: 0;
-  }
-}
+
 
 .product-info {
   background: white;
@@ -2584,7 +2561,6 @@ main {
   border-radius: 999px;
   text-transform: uppercase;
 }
-
 
 
 

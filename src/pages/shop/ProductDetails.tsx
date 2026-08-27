@@ -13,7 +13,7 @@ function ProductDetails() {
   const product = products.find(p => p.slug === slug) || products[0];
   const { add } = useCart();
   const [quantity, setQuantity] = useState(1);
-  const [active, setActive] = useState(0);
+  // const [active, setActive] = useState(0);
   const [toast, setToast] = useState('');
 
   useEffect(() => {
@@ -27,9 +27,11 @@ function ProductDetails() {
         <div className="breadcrumbs"><a href="/">Home</a><ChevronRight size={14} /><a href="/shop/#/products">Shop all</a><ChevronRight size={14} /> {product.name}</div>
         <div className="detail-grid">
           <div className="gallery">
-            <div className="thumbs">{product.images.map((image, index) => <button className={active === index ? 'active' : ''} onClick={() => setActive(index)} key={image}><img src={image} alt={`${product.name} view ${index + 1}`} /></button>)}</div>
-            <div className="main-image"><img src={product.images[active]} alt={product.name} /><span className="discount">-{product.discount}%</span></div>
-          </div>
+  <div className="main-image">
+    <img src={product.images[0]} alt={product.name} />
+    
+  </div>
+</div>
           <div className="detail-copy">
             <span className="eyebrow">{product.category}</span>
             <h1>{product.name}</h1>
