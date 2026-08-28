@@ -457,9 +457,9 @@ em {
 .cart-link:hover {
   color: var(--primary);
 }
-@media (max-width: 760px) {
-  .search {
-    display: none;
+@media (max-width: 767px) {
+  header.header .search {
+    display: none !important;
   }
   .cart-link span {
     display: none;
