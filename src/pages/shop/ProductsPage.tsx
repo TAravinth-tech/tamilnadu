@@ -5,6 +5,7 @@ import { products } from '@/data/site';
 import { useCart } from '@/lib/cart-context';
 import { ProductCard } from '@/components/site/ProductCard';
 import { Toast } from '@/components/site/Toast';
+import banner from "/src/images/tng-hero-banner.png";
 
 function ProductsPage() {
   const { add } = useCart();
@@ -26,9 +27,23 @@ function ProductsPage() {
   return (
     <>
       <main className="container listing">
-        <div className="breadcrumbs"><a href="/">Home</a><ChevronRight size={14} /> Shop all</div>
+
+        <section className="hero">
+  <img
+    src={banner}
+    alt="Tamil Nadu Global — premium products, rooted in tradition"
+    className="hero-banner-img"
+  />
+</section>
+
+
+        {/* <div className="breadcrumbs"><a href="/">Home</a><ChevronRight size={14} /> Shop all</div> */}
+        <br />
+        <br />
+        <br />
+        
         <div className="listing-header">
-          <div><span className="eyebrow">The collection</span><h1>Good things,<br /><em>well chosen.</em></h1><p>Our edit of pantry essentials, aromatic spices and thoughtful gifts.</p></div>
+          <div><span className="eyebrow">The collection</span><h1>Good things,<br /><em>well chosen.</em></h1></div>
           
         </div>
         <div className="listing-toolbar">

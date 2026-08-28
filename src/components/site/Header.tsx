@@ -35,17 +35,17 @@ export function Header({ current = 'home' as Page }: { current?: Page }) {
         </div>
         {open && (
           <nav className="mobile-nav">
-            <a className={cls('home')} href="/">Home</a>
-            <a className={cls('about')} href="/about/">About us</a>
+            {/* <a className={cls('home')} href="/">Home</a> */}
             <a className={cls('shop')} href="/shop/#/products">Products</a>
+            <a className={cls('about')} href="/about/">About us</a>
             <a className={cls('contact')} href="/contact/">Contact us</a>
           </nav>
         )}
         <nav className="desktop-nav">
           <div className="nav-inner">
-            <a className={cls('home')} href="/">Home</a>
-            <a className={cls('about')} href="/about/">About us</a>
+            {/* <a className={cls('home')} href="/">Home</a> */}
             <a className={cls('shop')} href="/shop/#/products">Products</a>
+            <a className={cls('about')} href="/about/">About us</a>
             <a className={cls('contact')} href="/contact/">Contact us</a>
           </div>
         </nav>

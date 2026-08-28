@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="site-footer-bar">
-        <span>© 2026 TamilnaduGlobal</span>
+        <span>© 2026 TamilnaduGlobals</span>
         <Heart size={13} className="site-footer-heart" />
         <span>WhatsApp: 93609 64448</span>
       </div>

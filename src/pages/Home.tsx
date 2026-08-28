@@ -49,15 +49,15 @@ function Home() {
 
 
         
-        <section className="trust-strip">
+        {/* <section className="trust-strip">
           <span><PackageCheck size={20} /><b>Carefully packed</b><small>Every order, every time</small></span>
           <span><BadgeCheck size={20} /><b>Quality you can trust</b><small>Good food starts here</small></span>
           <span><Truck size={20} /><b>Delivered with care</b><small>Across India</small></span>
           <span><WalletCards size={20} /><b>Easy WhatsApp orders</b><small>Simple & personal</small></span>
-        </section>
+        </section> */}
 
 
-       <section className="container why">
+       {/* <section className="container why">
           <SectionHeading kicker="Why TamilnaduGlobal" title="The good stuff, made simple" action="" />
           <div className="why-grid">
             <div><span className="why-icon"><BadgeCheck /></span><h3>Quality products</h3><p>Small-batch favourites chosen for freshness, flavour and trust.</p></div>
@@ -65,22 +65,16 @@ function Home() {
             <div><span className="why-icon"><ShoppingBag /></span><h3>Easy ordering</h3><p>A thoughtful collection without the endless scrolling.</p></div>
             <div><span className="why-icon"><Send /></span><h3>WhatsApp support</h3><p>Real people, quick answers and orders made personal.</p></div>
           </div>
-        </section>
-
-
-        
-        {/* <section className="container featured">
-          <SectionHeading kicker="The edit" title="Loved by our community" />
-          <div className="product-grid">
-            {products.slice(0, 4).map(product => <ProductCard product={product} key={product.id} onAdd={() => { add(product); setToast(`${product.name} added to your cart`); }} />)}
-          </div>
-          {toast && <Toast message={toast} onClose={() => setToast('')} />}
         </section> */}
 
 
+        
+        
 
 
-         <section className="container featured">
+
+
+         {/* <section className="container featured">
   <SectionHeading
     kicker="OUR PRODUCTS"
     title="Explore Our Product Categories"
@@ -168,7 +162,7 @@ function Home() {
       </a>
     </div>
   </div>
-</section>
+</section> */}
 
 
 
@@ -189,7 +183,7 @@ function Home() {
 
 
         
-        <section className="promo container">
+        {/* <section className="promo container">
           <div>
             <span className="eyebrow">A pantry worth sharing</span>
             <h2>Good food is<br /><em>always in season.</em></h2>
@@ -207,7 +201,7 @@ function Home() {
             <div><b>03</b><MapPin /><h3>Delivery details</h3><span>Tell us where to send it</span></div>
             <div><b>04</b><Send /><h3>WhatsApp order</h3><span>We&rsquo;ll take it from there</span></div>
           </div>
-        </section>
+        </section> */}
       </main>
       </SiteLayout>
     </CartProvider>
