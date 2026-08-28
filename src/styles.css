@@ -336,18 +336,34 @@ em {
   margin-top: 4px;
 }
 .brand-mark {
-  position: relative;
-  width: 42px;
-  height: 42px;
-  border-radius: 13px;
-  background: linear-gradient(135deg, var(--primary), var(--cyan));
-  display: grid;
-  place-items: center;
-  color: white;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #FFFFFF !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+
   overflow: hidden;
-  box-shadow: 0 6px 16px -6px rgba(13, 76, 140, 0.6);
 }
 
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+
+  /* Removes very light background appearance */
+  mix-blend-mode: multiply;
+}
 
 @media (max-width: 899px) {
   .brand-mark {
