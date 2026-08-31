@@ -9,7 +9,7 @@ export function Footer() {
       <div className="site-footer-bar">
         <span>© 2026 TamilnaduGlobals</span>
         <Heart size={13} className="site-footer-heart" />
-        <span>WhatsApp: 93609 64448</span>
+        <span>WhatsApp: 84898 07630 </span>
       </div>
     </footer>
   );

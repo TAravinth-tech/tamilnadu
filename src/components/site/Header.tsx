@@ -19,7 +19,7 @@ export function Header({ current = 'home' as Page }: { current?: Page }) {
 
   return (
     <>
-      <div className="topline"><span>Curated with care from Tamil Nadu</span><span className="topline-right"><Phone size={13} /> WhatsApp orders: <b>93609 64448</b></span></div>
+      <div className="topline"><span>Curated with care from Tamil Nadu</span><span className="topline-right"><Phone size={13} /> WhatsApp orders: <b>84898 07630</b></span></div>
       <header className="header">
         <div className="header-inner">
           <button className="mobile-menu" onClick={() => setOpen(!open)} aria-label="Menu">{open ? <X /> : <Menu />}</button>

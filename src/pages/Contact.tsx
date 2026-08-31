@@ -16,7 +16,7 @@ function Contact() {
           <div className="contact-info">
             <span className="eyebrow">Reach us directly</span>
             <h2>Let&rsquo;s talk.</h2>
-            <div><span className="contact-icon"><Phone /></span><p><small>WhatsApp & phone</small><a href="tel:9360964448">93609 64448</a></p></div>
+            <div><span className="contact-icon"><Phone /></span><p><small>WhatsApp & phone</small><a href="tel:8489807630">84898 07630</a></p></div>
             <div><span className="contact-icon"><Mail /></span><p><small>Email us</small><a href="mailto:hello@tamilnaduglobal.in">hello@tamilnaduglobal.in</a></p></div>
             <div><span className="contact-icon"><Clock3 /></span><p><small>Support hours</small><b>Mon – Sat, 9am – 6pm</b></p></div>
           </div>
@@ -38,7 +38,7 @@ Email: ${email}
 How can we help:
 ${message}`;
 
-    const whatsappUrl = `https://wa.me/919360964448?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/918489807630?text=${encodeURIComponent(whatsappMessage)}`;
 
     window.open(whatsappUrl, '_blank');
   }}

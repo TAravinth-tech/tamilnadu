@@ -25,7 +25,7 @@ const confirm = () => {
       `${i + 1}. ${line.product.name}\n   Price: ${money(line.product.originalPrice)}\n   Offer Price: ${money(line.product.price)} \n   Quantity: ${line.quantity}\n   Subtotal: ${money(line.product.price * line.quantity)}`
     ).join('\n\n');
     const message = `Hello TamilnaduGlobal,\n\nI would like to place an order.\n\nCustomer Details:\nName: ${form.name}\nPhone: ${form.phone}\nAddress: ${form.address}, ${form.city}, ${form.state} \n\nOrder Details:\n\n${order}\n\nTotal Amount: ${money(total)}\n\nPlease confirm my order.\n\nThank you.`;
-    window.open(`https://wa.me/916381216369?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/918489807630?text=${encodeURIComponent(message)}`, '_blank');
     clear();
     navigate('/order-confirmation');
   };
