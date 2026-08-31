@@ -19,14 +19,13 @@ function Checkout() {
     setEditing(false);
   };
 
-  const confirm = () => {
+const confirm = () => {
     saveDeliveryDetails(form);
-    const order = lines.map((line, i) => `${i + 1}. ${line.product.name}\n   Quantity: ${line.quantity}\n   Price: ${money(line.product.price)}\n   Subtotal: ${money(line.product.price * line.quantity)}`).join('\n\n');
+    const order = lines.map((line, i) => 
+      `${i + 1}. ${line.product.name}\n   Price: ${money(line.product.originalPrice)}\n   Offer Price: ${money(line.product.price)} \n   Quantity: ${line.quantity}\n   Subtotal: ${money(line.product.price * line.quantity)}`
+    ).join('\n\n');
     const message = `Hello TamilnaduGlobal,\n\nI would like to place an order.\n\nCustomer Details:\nName: ${form.name}\nPhone: ${form.phone}\nAddress: ${form.address}, ${form.city}, ${form.state} \n\nOrder Details:\n\n${order}\n\nTotal Amount: ${money(total)}\n\nPlease confirm my order.\n\nThank you.`;
-    window.open(`https://wa.me/919360964448?text=${encodeURIComponent(message)}`, '_blank');
-    // The order has been handed off to WhatsApp for the team to action
-    // manually, so the cart empties — but the delivery details stay saved
-    // for next time (see src/lib/delivery.ts).
+    window.open(`https://wa.me/916381216369?text=${encodeURIComponent(message)}`, '_blank');
     clear();
     navigate('/order-confirmation');
   };

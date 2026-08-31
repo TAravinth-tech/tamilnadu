@@ -18,10 +18,55 @@ function About() {
     { year: '2023', text: 'Began shipping pan-India, keeping the same personal, WhatsApp-first ordering experience.' },
     { year: '2026', text: 'A growing community of home cooks who trust us for the good things, well chosen.' },
   ];
+
+  // Add all your product advertisement video URLs here — grid is fixed at 3 columns
+  const videos = [
+    { src: 'https://videotourl.com/videos/1788179317548-c20f3728-545e-49c0-8bd3-8b4513589fda.mp4', title: 'See how we pack every order' },
+    { src: 'https://videotourl.com/videos/1788180056850-c95ee162-5a4e-498f-b630-bb2f491224ee.mp4', title: 'Discover our kitchen' },
+    { src: 'https://videotourl.com/videos/1788180112639-fbe02412-da22-453d-812a-9a7c608693a9.mp4', title: 'Learn about our ingredients' },
+    { src: 'https://videotourl.com/videos/1788180154879-bb7847ab-130c-4843-9540-34863d962ed4.mp4', title: 'Meet our team' },
+    { src: 'https://videotourl.com/videos/1788180195879-4e735b8d-bdf8-4ff4-adcd-e98e9b74c95c.mp4', title: 'Our commitment to quality' },
+    { src: 'https://videotourl.com/videos/1788180217112-b1c2e191-b8bb-4f9a-b05a-87d07f63a8f7.mp4', title: 'Our sustainability efforts' },
+    { src: 'https://videotourl.com/videos/1788180508086-ecc64e7a-c03d-4c30-b471-4c950716519a.mp4', title: 'Our community impact' },
+    { src: 'https://videotourl.com/videos/1788180698296-30a96b50-fc6c-439a-a9fb-5987a3586b8b.mp4', title: 'Our story' },
+    { src: 'https://videotourl.com/videos/1788180898240-517e0bbb-b34e-46a5-b7fb-31fd46377731.mp4', title: 'Our journey' },
+    { src: 'https://videotourl.com/videos/1788180936866-da544185-7583-40fd-bbf3-97998c0e47af.mp4', title: 'Our vision' },
+    { src: 'https://videotourl.com/videos/1788180984267-bfdfea09-fb12-492b-8994-213108d66729.mp4', title: 'Our future' },
+    // { src: '...', title: '...' },
+    // { src: '...', title: '...' },
+    // add up to 9 (or more — it will just wrap into further rows of 3)
+  ];
+
   return (
     <CartProvider>
       <SiteLayout current="about">
       <main className="about-page">
+
+        <section className="container videos">
+  <div className="section-heading">
+    <div>
+      <br />
+      <br />
+      <br />
+      <span className="eyebrow">See it for yourself</span>
+      <h2>Our products, in action</h2>
+    </div>
+  </div>
+  <div className="videos-grid">
+    {videos.map(video => (
+      <div className="video-card" key={video.src}>
+        <video
+          src={video.src}
+          controls
+          preload="metadata"
+          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+        />
+        {video.title && <p className="video-caption">{video.title}</p>}
+      </div>
+    ))}
+  </div>
+</section>
+
         <section className="contact-hero">
           <span className="eyebrow"><Sparkles size={14} style={{ verticalAlign: '-2px', marginRight: 6 }} />Our story</span>
           <h1>Good food, good people,<br /><em>good intentions.</em></h1>
@@ -51,10 +96,6 @@ function About() {
           </div>
         </section>
 
-       
-
-        
-
         <section className="promo container">
           <div>
             <span className="eyebrow">Want to know more?</span>
@@ -69,5 +110,4 @@ function About() {
     </CartProvider>
   );
 }
-
 export default About;

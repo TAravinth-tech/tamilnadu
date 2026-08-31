@@ -26,6 +26,10 @@ import dishwash from '@/images/dishwash.webp';
 import handwash from '@/images/handwash.webp';
 import hair from '@/images/hair.webp';
 import hair_shampoo from '@/images/hair_shampoo.webp';
+import con1 from '@/images/con1.png';
+import con2 from '@/images/con2.png';
+import con3 from '@/images/con3.png';
+
 
 export const images = {
   pain,
@@ -39,6 +43,7 @@ export const images = {
   handwash,
   hair,
   hair_shampoo,
+  con1,con2,con3,
   // rustic,
 };
 
@@ -304,6 +309,81 @@ features: [
 ],
     availability: "In stock",
   },
+
+
+  {
+    id: 20,
+    name: "Stackable Storage Bowl Set",
+    slug: "stackable-storage-bowl-set",
+    category: "Household Care",
+    description:
+      "Everly 3-Piece Nesting Storage Bowl Set with Lids Keep your kitchen organized and your leftovers fresh with this elegant 3-piece stackable storage bowl set. Crafted from durable, lightweight material with a classic white finish and hand-painted blue floral accents, these bowls nest neatly into each other for compact storage while their snap-on clear lids create an airtight seal to lock in freshness. Perfect for meal prepping, storing leftovers, or serving at the table, this versatile set transitions effortlessly from fridge to microwave to dining table",
+    price: 499,
+    originalPrice: 550,
+    discount: 14,
+    images: [images.con1, images.con1],
+    specifications: [
+      "Set includes: 3 nesting bowls with lids (small, medium, large)",
+      "Material: BPA-free durable plastic/ceramic composite",
+      "Microwave, dishwasher & freezer safe",
+    ],
+    features: [
+      "Space-saving nested design for easy storage",
+      "Secure snap-on lids keep food fresh longer",
+      "Elegant blue floral pattern on classic white base",
+    ],
+    availability: "In stock",
+  },
+
+   {
+    id: 21,
+    name: "Stackable Storage Bowl Set",
+    slug: "stackable-storage-bowl-set",
+    category: "Household Care",
+    description:
+      "Everly 3-Piece Nesting Storage Bowl Set with Lids Keep your kitchen organized and your leftovers fresh with this elegant 3-piece stackable storage bowl set. Crafted from durable, lightweight material with a classic white finish and hand-painted blue floral accents, these bowls nest neatly into each other for compact storage while their snap-on clear lids create an airtight seal to lock in freshness. Perfect for meal prepping, storing leftovers, or serving at the table, this versatile set transitions effortlessly from fridge to microwave to dining table",
+    price: 399,
+    originalPrice: 450,
+    discount: 14,
+    images: [images.con2, images.con2],
+    specifications: [
+      "Set includes: 3 nesting bowls with lids (small, medium, large)",
+      "Material: BPA-free durable plastic/ceramic composite",
+      "Microwave, dishwasher & freezer safe",
+    ],
+    features: [
+      "Space-saving nested design for easy storage",
+      "Secure snap-on lids keep food fresh longer",
+      "Elegant blue floral pattern on classic white base",
+    ],
+    availability: "In stock",
+  },
+
+   {
+    id: 22,
+    name: "Stackable Storage Bowl Set",
+    slug: "stackable-storage-bowl-set",
+    category: "Household Care",
+    description:
+      "Everly 3-Piece Nesting Storage Bowl Set with Lids Keep your kitchen organized and your leftovers fresh with this elegant 3-piece stackable storage bowl set. Crafted from durable, lightweight material with a classic white finish and hand-painted blue floral accents, these bowls nest neatly into each other for compact storage while their snap-on clear lids create an airtight seal to lock in freshness. Perfect for meal prepping, storing leftovers, or serving at the table, this versatile set transitions effortlessly from fridge to microwave to dining table",
+    price: 380,
+    originalPrice: 450,
+    discount: 14,
+    images: [images.con3, images.con3],
+    specifications: [
+      "Set includes: 3 nesting bowls with lids (small, medium, large)",
+      "Material: BPA-free durable plastic/ceramic composite",
+      "Microwave, dishwasher & freezer safe",
+    ],
+    features: [
+      "Space-saving nested design for easy storage",
+      "Secure snap-on lids keep food fresh longer",
+      "Elegant blue floral pattern on classic white base",
+    ],
+    availability: "In stock",
+  },
+
+
 
 
 ];
